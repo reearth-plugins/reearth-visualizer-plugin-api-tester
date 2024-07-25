@@ -1,0 +1,25 @@
+const cameraTestConfigs = [
+  { path: "reearth.camera.position" },
+  { path: "reearth.camera.fov" },
+  { path: "reearth.camera.aspectRatio" },
+  { path: "reearth.camera.viewport" },
+  { path: "reearth.camera.flyTo" },
+  { path: "reearth.camera.flyToBoundingBox" },
+  { path: "reearth.camera.zoomIn" },
+  { path: "reearth.camera.zoomOut" },
+  { path: "reearth.camera.lookAt" },
+  { path: "reearth.camera.getGlobeIntersection" },
+  { path: "reearth.camera.rotateAround" },
+  { path: "reearth.camera.rotateRight" },
+  { path: "reearth.camera.orbit" },
+  { path: "reearth.camera.enableScreenSpaceCameraController" },
+  { path: "reearth.camera.overrpatheScreenSpaceCameraController" },
+  { path: "reearth.camera.move" },
+  { path: "reearth.camera.moveOverTerrain" },
+  { path: "reearth.camera.setView" },
+  { path: "reearth.camera.enableForceHorizontalRoll" },
+  { path: "reearth.camera.on.move" },
+  { path: "reearth.camera.off.move" },
+];
+
+export default cameraTestConfigs;

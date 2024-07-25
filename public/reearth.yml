@@ -1,10 +1,43 @@
-id: reearth-classic-plugin-shadcn-template
-name: Classic plugin shadcn template
+id: reearth-visualizer-plugin-api-tester
+name: Plugin API Tester
 version: 1.0.0
 extensions:
-  - id: demo
+  - id: testerwidget
     type: widget
-    name: Demo
+    name: Plugin API Tester Widget
+    schema:
+      groups:
+        - id: appearance
+          title: Appearance
+          fields:
+            - id: primary_color
+              title: Primary color
+              type: string
+              ui: color
+    widgetLayout:
+      extendable:
+        vertically: true
+        horizontally: true
+      defaultLocation:
+        zone: outer
+        section: left
+        area: middle
+      extended: true
+  - id: testerinfoboxblock
+    type: infoboxBlock
+    name: Plugin API Tester Infobox Block
+    schema:
+      groups:
+        - id: appearance
+          title: Appearance
+          fields:
+            - id: primary_color
+              title: Primary color
+              type: string
+              ui: color
+  - id: testerstoryblock
+    type: storyBlock
+    name: Plugin API Tester Story Block
     schema:
       groups:
         - id: appearance
