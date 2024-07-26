@@ -107,7 +107,7 @@ const TreeNode: FC<TreeNodeProps> = ({
                     <PopoverContent
                       collisionPadding={10}
                       align="end"
-                      className="p-2"
+                      className={`p-2 border-white rounded-lg ${size === "s" ? "w-64 max-h-40" : "w-96 max-h-96"}`}
                     >
                       <img src={status.result} />
                     </PopoverContent>
@@ -123,7 +123,7 @@ const TreeNode: FC<TreeNodeProps> = ({
                     <PopoverContent
                       collisionPadding={10}
                       align="end"
-                      className="p-4 overflow-auto break-all bg-gray-100 border-8 border-white rounded-lg w-96 max-h-96"
+                      className={`p-4 overflow-auto break-all bg-gray-100 border-8 border-white rounded-lg ${size === "s" ? "w-64 max-h-40 text-xs" : "w-96 max-h-96"}`}
                     >
                       <ReactJson
                         src={status?.result}
