@@ -81,7 +81,9 @@ const TreeNode: FC<TreeNodeProps> = ({
 
   return (
     <li>
-      <div className="flex items-center h-6 p-1 mt-1 mb-1 bg-gray-100 rounded-sm select-none hover:bg-gray-200">
+      <div
+        className={`flex items-center h-6 p-1 mt-1 mb-1 ${node.isGroup ? "bg-gray-200" : "bg-gray-100"}  rounded-sm select-none hover:bg-gray-200`}
+      >
         <div className="shrink-0">
           {node.children && node.children.length > 0 ? (
             <ChevronRight
