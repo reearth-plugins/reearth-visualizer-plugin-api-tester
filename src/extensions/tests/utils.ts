@@ -17,13 +17,13 @@ const TEST_3DTILES_URL =
 export function initTestLayers() {
   const extensionGlobal = getGlobal();
   const reearth = extensionGlobal.reearth;
-  extensionGlobal.testLayers = {};
 
   // 3dtiles
-  if (!extensionGlobal.testLayers["3dtiles"]) {
+  if (!extensionGlobal.testLayers?.["3dtiles"]) {
     const layerId = reearth.layers.layers.find(
       (l) => l?.data.url === TEST_3DTILES_URL
     )?.id;
+    if (!extensionGlobal.testLayers) extensionGlobal.testLayers = {};
     if (layerId) extensionGlobal.testLayers["3dtiles"] = layerId;
     else {
       extensionGlobal.testLayers["3dtiles"] = reearth.layers.add({
