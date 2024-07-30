@@ -1,6 +1,6 @@
 {
-  "name": "reearth-classic-plugin-shadcn-template",
-  "version": "0.0.1",
+  "name": "reearth-visualizer-plugin-api-tester",
+  "version": "1.0.1",
   "type": "module",
   "engines": {
     "node": ">=20.11.0"
