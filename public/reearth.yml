@@ -1,6 +1,6 @@
 id: reearth-visualizer-plugin-api-tester
 name: Plugin API Tester
-version: 1.0.0
+version: 1.0.1
 extensions:
   - id: testerwidget
     type: widget
